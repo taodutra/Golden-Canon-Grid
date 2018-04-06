@@ -63,6 +63,24 @@ body{
 .golden-copy{
   margin-bottom: 10px;
 }
+.text{
+  display: inline-block;
+  position: absolute;
+}
+.rotate{
+  transform: rotate(90deg);
+}
+.text-01{
+  left: 9vw;
+  transform: rotate(90deg) translateY(-100%);
+  transform-origin: 0% 0%;
+  top: 5.4vh;
+}
+.text-02{ 
+  top: 5.2vh;
+  left: 34vw;
+  width: 85px;
+}
 @media (min-width:768px) {
   .area-01{
     height: 35%;
@@ -76,6 +94,15 @@ body{
   }
   .golden-copy{
     margin-bottom: 17px;
+  }
+  .text-01{
+    left: 8.3vw;
+    top: 5.3vh;
+  }
+  .text-02{ 
+    left: 37vw;
+    top: 5.3vh;
+    width: auto;
   }
 }
 @media (min-width:1024px) {
@@ -99,5 +126,13 @@ body{
   }
   .golden-copy{
     margin-bottom: 13px;
+  }
+  .text-01{
+    left: 6vw;
+    top: 5.2vh;     
+  }
+  .text-02{ 
+    top: 5.2vh;
+    left: 20vw;
   }
 }
