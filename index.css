@@ -66,9 +66,7 @@ body{
 .text{
   display: inline-block;
   position: absolute;
-}
-.rotate{
-  transform: rotate(90deg);
+  transition: all 0.25s ease-in-out
 }
 .text-01{
   left: 9vw;
@@ -80,6 +78,14 @@ body{
   top: 5.2vh;
   left: 34vw;
   width: 85px;
+}
+.text-03{
+  transform: rotate(90deg);
+  transform-origin: 0% 100%;
+  top: 32.5vh;
+  left: 87.5vw;
+  display: block;
+  white-space: nowrap;
 }
 @media (min-width:768px) {
   .area-01{
@@ -103,6 +109,9 @@ body{
     left: 37vw;
     top: 5.3vh;
     width: auto;
+  }
+  .text-03{
+    left: 93.75vw;
   }
 }
 @media (min-width:1024px) {
@@ -134,5 +143,12 @@ body{
   .text-02{ 
     top: 5.2vh;
     left: 20vw;
+  }
+  .text-03{
+    top: inherit;
+    bottom: 50vh;
+    left: inherit;
+    right: 6vw;
+    transform-origin: 100% 0%;
   }
 }
